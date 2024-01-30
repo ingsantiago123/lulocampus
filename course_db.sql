@@ -38,11 +38,11 @@ CREATE TABLE `bookmark` (
 -- Table structure for table `comments`
 --
 
-CREATE TABLE `comments` (
+CREATE TABLE `admin` (
   `id` varchar(20) NOT NULL,
   `content_id` varchar(20) NOT NULL,
   `user_id` varchar(20) NOT NULL,
-  `tutor_id` varchar(20) NOT NULL,
+  `admin_id` varchar(20) NOT NULL,
   `comment` varchar(1000) NOT NULL,
   `date` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -133,6 +133,7 @@ CREATE TABLE `users` (
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   `image` varchar(100) NOT NULL
+  `course` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 COMMIT;
 
