@@ -80,7 +80,9 @@ section{
    text-transform: capitalize;
    cursor: pointer;
    text-align: center;
+   
 }
+
 
 .btn,
 .option-btn,
@@ -124,6 +126,9 @@ section{
    display:flex;
    gap: 1rem;
 }
+
+
+
 
 .message{
    position: sticky;

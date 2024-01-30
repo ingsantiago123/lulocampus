@@ -10,6 +10,7 @@
    --light-bg:#eee;
    --border:.1rem solid rgba(0,0,0,.2);
    --green:#5ab14f;
+   --fondo: url(../images/light-bg.png);
 }
 
 *{
@@ -44,8 +45,10 @@ html{
 }
 
 body{
-   background-color: var(--light-bg);
-   padding-left: 30rem;
+background: var(--fondo);
+padding-left: 30rem;
+
+
 }
 
 body.dark{
@@ -54,8 +57,9 @@ body.dark{
    --light-color:#aaa;
    --light-bg:#333;
    --border:.1rem solid rgba(255,255,255,.2);
-}
 
+   --fondo:url(../images/dark-bg.png);
+}
 body.active{
    padding-left: 0;
 }
